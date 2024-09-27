@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.card-1 {
+  padding-left: 6%;
+}
+
+.title {
+  font-weight: bold;
+  width: 80%;
+  font-size: 2.4rem;
+}
+
+.title span {
+  color: #ab58da;
+}
+
+p {
+  color: #9291ab;
+  font-size: 15px;
+  font-weight: normal;
+  width: 60%;
+}
+
+.disc {
+  width: 70%;
+  margin-top: 1rem;
+  line-height: 25px;
+}
+.nums {
+  display: flex;
+}
+
+.nums div {
+  margin-right: 70px;
+  margin-top: 2.5rem;
+}
+.nums h2 {
+  margin-bottom: -15px;
+}
+
+.img-container {
+  background-color: #c368fc;
+  height: 27.7rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.img-container img {
+  mix-blend-mode: multiply;
+}
+
+.mob-img {
+  display: none;
+}
+
+.desk-img {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (width<=76em) {
+  body {
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 15rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .desk-img {
+    display: none;
+  }
+  .mob-img {
+    display: block;
+    height: 15rem;
+    width: 100%;
+  }
+  .card-1 {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .title,
+  .disc {
+    width: 100%;
+  }
+
+  .nums {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  p {
+    width: 100%;
+  }
+  .nums div {
+    margin-right: 0px;
+    margin-top: 0.7rem;
+  }
+}
